@@ -1,0 +1,668 @@
+/* -------------------------------------------------------------------------- */
+/*                                 common css                                 */
+/* -------------------------------------------------------------------------- */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "jost", sans-serif;
+}
+.custom-container {
+  max-width: 1920px;
+  margin: 0px auto;
+  padding: 0px 50px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  height: 120px;
+}
+.call-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.call-wrapper img {
+  height: 16px;
+}
+.call-wrapper a {
+  color: #ffffff;
+  font-size: 18px;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.header-icon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.header-menu ul img {
+  height: 90px;
+  width: auto;
+}
+.header-menu ul a {
+  color: #ffffff;
+  font-size: 18px;
+}
+.header-icon img {
+  height: 18px;
+  width: 18px;
+  filter: invert(1);
+}
+.banner-wrapper {
+  background-image: url("../assets/banner.webp");
+  height: 700px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.banner-wrapper p:first-child {
+  /* color: #ffffff; */
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 15px 0px;
+}
+.banner-wrapper h3 {
+  font-family: "limelight";
+  color: white;
+  font-size: 90px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.button-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 34px;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  color: black;
+  border-radius: 4px;
+}
+.button-wrapper button img {
+  height: 18px;
+  width: 18px;
+}
+.button-wrapper button p {
+  color: black;
+  font-weight: 800;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Feature                                  */
+/* -------------------------------------------------------------------------- */
+.feature-wrapper {
+  background-color: #fefdf8;
+  position: relative;
+}
+.feature-container {
+  padding: 110px 0px 130px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.award-number {
+  font-size: 200px;
+  color: #c59452;
+  font-family: "limelight";
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+.award-number::after {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 1px;
+  left: -100px;
+  top: 50%;
+  background-color: #c5945266;
+}
+.feature-details {
+  margin-top: 200px;
+  width: calc(50% - 40px);
+}
+.feature-details h2 {
+  font-size: 60px;
+  font-family: "limelight";
+  font-weight: 500;
+}
+.feature-details h2 span {
+  border-bottom: 2px solid #c59452;
+}
+.feature-details p {
+  color: #706f6b;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.feature-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+.feature-details button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 34px;
+  background-color: black;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+}
+.feature-details img {
+  filter: invert(1);
+}
+.feature-our-barbers {
+  padding: 15px 34px;
+}
+.feature-our-barbers p {
+  margin: 0px;
+  color: black;
+}
+.feature-image {
+  width: calc(50% - 40px);
+  position: relative;
+}
+.feature-image::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/barber-home-02.jpg.webp");
+  width: 400px;
+  height: 400px;
+  z-index: 100;
+  top: 40%;
+  left: 30%;
+  background-repeat: no-repeat;
+}
+.feature-time {
+  position: absolute;
+  font-family: "limelight";
+  font-weight: 500;
+  top: 30px;
+  right: 15%;
+}
+.feature-time p:first-child {
+  font-size: 28px;
+  color: black;
+  text-align: end;
+}
+.feature-time p:last-child {
+  font-size: 90px;
+  color: #c59452;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  services                                  */
+/* -------------------------------------------------------------------------- */
+
+.service-wrapper {
+  background-color: #f7f3e8;
+  padding: 100px 0px;
+}
+
+.service-details h3 {
+  justify-content: center;
+  text-align: center;
+  font-family: "limelight";
+  font-weight: 500;
+  font-size: 60px;
+  margin-bottom: 80px;
+}
+.service-details h3 span {
+  border-bottom: 2px solid #c59452;
+}
+.service-provider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.service-type img {
+  width: 70px;
+  height: 70px;
+}
+.service-type h4 {
+  font-size: 17px;
+  margin-top: 15px;
+}
+.service-type p {
+  font-size: 20px;
+  color: #706f6b;
+  margin-top: 15px;
+}
+.service-type button {
+  margin-top: 30px;
+  padding: 10px 34px;
+  background-color: black;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+}
+
+.muchstack-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+.muchstack-details img {
+  width: 60px;
+  height: 20px;
+}
+.muchstack-type p {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                barber-image                                */
+/* -------------------------------------------------------------------------- */
+
+.image-content-wrapper {
+  background-color: #ffffff;
+}
+
+.image-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.image-details img {
+  width: 33.33%;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   pricing                                  */
+/* -------------------------------------------------------------------------- */
+
+.pricing-wrapper {
+  background-color: #fefdf8;
+  padding: 100px 0px;
+}
+.pricing-heading h3 {
+  justify-content: center;
+  text-align: center;
+  font-family: "limelight";
+  font-weight: 500;
+  font-size: 55px;
+  /* margin-bottom: 80px; */
+}
+.pricing-heading h3 span {
+  border-bottom: 2px solid #c59452;
+}
+.pricing-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.pricing-details h4 {
+  font-size: 19px;
+}
+.pricing-details p {
+  font-size: 17px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.pricing-details {
+  /* background-color: #f7f3e8; */
+  width: calc(50% - 20px);
+}
+.pricing-detail {
+  /* background-color: #f7f3e8; */
+  width: calc(50% - 20px);
+}
+.pricing-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 35px;
+}
+.pricing-details-box h4 {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+.pricing-details-box p {
+  color: #706f6b;
+  font-size: 17px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  one-image                                 */
+/* -------------------------------------------------------------------------- */
+.iconic-wrapper {
+  background-color: #fefdf8;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+}
+.image-box p {
+  font-size: 22px;
+  text-align: center;
+  padding: 30px 0px;
+  background-color: #f7f3e8;
+}
+
+.iconic-line p {
+  text-align: center;
+  font-size: 22px;
+  padding: 30px 0px;
+}
+.brand {
+  font-family: "limelight";
+  color: black;
+  font-size: 26px;
+  border-bottom: 2px solid #c59452;
+}
+.brand-box {
+  background-color: #fefdf8;
+}
+
+/* .brand-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.brand-side {
+  padding: 40px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand-name {
+  padding: 50px;
+  width: 25%;
+}
+
+.brand-side img {
+  object-fit: cover;
+  height: 110px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Talented Barber                              */
+/* -------------------------------------------------------------------------- */
+
+.talent-wrapper {
+  background-color: #fefdf8;
+}
+.talent-heading {
+  font-size: 55px;
+  text-align: center;
+  font-family: "limelight";
+  font-weight: 500;
+  padding: 50px 0px;
+}
+.talent-heading h3 span {
+  border-bottom: 2px solid #c59452;
+}
+.talent-image-wrapper {
+  /* background-color: white;    */
+  background-color: #fefdf8;
+}
+.image-outer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0px 15px; */
+  margin: 0px 100px;
+}
+
+.image-outer-box img {
+  width: 25%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  padding: 33px;
+}
+
+.muchstack-type-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.muchstack-details-two img {
+  width: 60px;
+  height: 20px;
+}
+.muchstack-type-two p {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              .beard-hairstyle                              */
+/* -------------------------------------------------------------------------- */
+
+.beard-hairstyle-wrapper {
+  background-color: #fefdf8;
+  padding: 80px 0px;
+}
+.beard-hairstyle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.beard-hairstyle-box img {
+  width: 570px;
+  height: 302px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             satisfied-customer                             */
+/* -------------------------------------------------------------------------- */
+
+.customer-wrapper {
+  background-color: #f7f3e8;
+  padding: 30px 0px;
+}
+.satisfied-heading {
+  text-align: center;
+  font-size: 55px;
+  font-family: "limelight";
+  font-weight: 500;
+  padding: 50px 0px;
+}
+.satisfied-heading h3 span {
+  border-bottom: 2px solid #c59452;
+}
+
+.customer-side {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.prev-wrapper {
+  font-size: 17px;
+}
+.description-wrapper p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px 0px 15px;
+  color: #706f6b;
+}
+.description-wrapper h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.customer-ratting-side {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0px;
+}
+.customer-haircut h3 {
+  font-size: 55px;
+  font-family: "limelight";
+}
+.customer-haircut p {
+  color: #706f6b;
+  font-size: 17px;
+}
+.customer-beardcut h3 {
+  font-size: 55px;
+  font-family: "limelight";
+}
+.customer-beardcut p {
+  color: #706f6b;
+  font-size: 17px;
+}
+.customer-style h3 {
+  font-size: 55px;
+  font-family: "limelight";
+}
+.customer-style p {
+  color: #706f6b;
+  font-size: 17px;
+}
+.customer-hairwash h3 {
+  font-size: 55px;
+  font-family: "limelight";
+}
+.customer-hairwash p {
+  color: #706f6b;
+  font-size: 17px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     Map                                    */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+/* .footer-wrapper {
+  background-image: url(../assets/footer.jpg.webp);
+  height: 550px;
+  width: auto;
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.footer-logo img {
+  height: 180px;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px;
+}
+.logo-details {
+  color: #c5945266;
+  font-size: 90px;
+  font-family: "limelight";
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.social-icon{
+  width: 11px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(1);
+  margin: 0px 10px;
+  justify-content: space-evenly;
+} */
+.footer-section{
+  background-image: url(../assets/footer.jpg.webp);
+  height: 550px;
+  width: auto;
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.footer-title img{
+  width: 80px;
+  height: 180px;
+}
+.footer-details{
+  color: #614D33;
+  font-size: 50px;
+  font-family: "limelight";
+  margin-bottom: 30px;
+  text-align: center;
+}
+.footer-icon img{
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+  margin: 0px 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.footer-ending{
+  color: #706f6b;
+}
+.footer-ending span{
+  color: #ffffff;
+  text-decoration: underline;
+}
